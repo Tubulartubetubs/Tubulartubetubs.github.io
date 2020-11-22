@@ -1,0 +1,404 @@
+body{
+    background-color: #49616E;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* border: 1px solid black; */
+}
+
+.topnav{
+    background-color: #F0EDEE;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #49616E;
+}
+
+.topnav a:hover{
+    background-color: #49616E;
+    color: #F0EDEE;
+}
+
+.container{
+    width: fit-content;
+    background-color: #F0EDEE;
+    padding: 10px;
+    margin: 1%;
+    border-radius: 10px;
+    align-items: center;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns:450px 975px;
+    grid-template-areas:
+    "header header"
+    "education education"
+    "organizations organizations"
+    "works works"
+    "skills skills"
+    "experience experience"
+}
+
+#headerContainer{
+    grid-area: header;
+    display: flex;
+    /* border: 1px solid black; */
+    /* justify-content: space-evenly; */
+    text-align: justify;
+}
+
+.imgSource{
+    width: fit-content;
+    /* border: 1px solid black; */
+}
+
+.imgSource img{
+    height: 400px;
+    width: 400px;
+    /* border: 1px solid black; */
+}
+
+.headers{
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 5%;
+}
+
+.profession{
+    color: #49616E;
+}
+
+.content{
+    text-align: justify;
+}
+
+.education.overall{
+    grid-area: education;
+}
+
+.line.education{
+    display: inline-block;
+    margin-left: 2%;
+    width: 78.75%;
+    border: 5px solid #49616E;
+    border-radius: 10px;
+    margin-bottom: auto;
+    background-color: #49616E;
+}
+
+.education.Label{
+    vertical-align: middle;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+#Education{
+    width: 99%;
+    height: fit-content;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+
+.education.container{
+    width: 99%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.education.image{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 100px;
+    background-color: #F0EDEE;
+    /* border: 1px solid black; */
+    margin-left: 1%;
+}
+
+.education.image img{
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    /* border: 1px solid black; */
+}
+
+.education.title{
+    /* margin-left: 10%; */
+    width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 2%;
+}
+
+.organizations.overall{
+    grid-area: organizations;
+}
+
+.line.organizations{
+    display: inline-block;
+    margin-left: 2%;
+    width: 73.1%;
+    border: 5px solid #49616E;
+    border-radius: 10px;
+    margin-bottom: auto;
+    background-color: #49616E;
+}
+
+.organizations.Label{
+    vertical-align: middle;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+#Organizations{
+    width: 99%;
+    height: fit-content;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+
+.organizations.container{
+    width: 99%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.organizations.image{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 100px;
+    background-color: #F0EDEE;
+    /* border: 1px solid black; */
+    margin-left: 1%;
+}
+
+.organizations.image img{
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    /* border: 1px solid black; */
+}
+
+.organizations.title{
+    /* margin-left: 10%; */
+    width: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 2%;
+}
+
+.line.works{
+    display: inline-block;
+    margin-left: 2%;
+    width: 85.3%;
+    border: 5px solid #49616E;
+    border-radius: 10px;
+    margin-bottom: auto;
+    background-color: #49616E;
+}
+
+
+.works.overall{
+    grid-area: works;
+}
+
+.works.Label{
+    vertical-align: middle;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+#Works{
+    width: 97%;
+    height: fit-content;
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.works.container{
+    width: 45%;
+}
+
+.works.container.image{
+    height: 360px;
+    width: 640px;
+    border-radius: 75px;
+    background-color: #F0EDEE;
+}
+
+.works.container.image img{
+    height: 360px;
+    width: 640px;
+}
+
+.works.title{
+    width: fit-content;
+    margin-left: -35%;
+}
+
+.line.skills{
+    display: inline-block;
+    margin-left: 2%;
+    width: 85.3%;
+    border: 5px solid #49616E;
+    border-radius: 10px;
+    margin-bottom: auto;
+    background-color: #49616E;
+}
+
+
+.skills.overall{
+    grid-area: skills;
+}
+
+.skills.Label{
+    vertical-align: middle;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+#Skills{
+    width: 97%;
+    height: fit-content;
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.skills.container{
+    width: 45%;
+}
+
+.skills.image{
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    background-color: #F0EDEE;
+}
+
+.skills.image img{
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+}
+
+.skills.title{
+    width: fit-content;
+    margin-left: -35%;
+}
+
+.experience.overall{
+    grid-area: experience;
+}
+
+.experience.Label{
+    vertical-align: middle;
+    margin-left: 2%;
+    margin-top: 10px;
+}
+
+.line.experience{
+    display: inline-block;
+    margin-left: 2%;
+    width: 78.8%;
+    border: 5px solid #49616E;
+    border-radius: 10px;
+    margin-bottom: auto;
+    background-color: #49616E;
+}
+
+#experiences{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.experience.container{
+    width: 45%;
+    grid-template-columns: 15% 85%;
+    display: grid;
+    grid-template-areas: 
+    "image job"
+    "image title"
+    "list list";
+}
+
+.experience.image{
+    grid-area: image;
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    background-color: #F0EDEE;
+}
+
+.experience.image img{
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+}
+
+.experience.job{
+    grid-area: job;
+    width: fit-content;
+    margin-top: -4%;
+}
+
+.experience.title{
+    grid-area: title;
+    width: fit-content;
+    margin-top: -5%;
+}
+
+.experience.list{
+    grid-area: list;
+    width: 95%;
+}
+
+/* .experience.list.Jank{
+    width: 100%;
+    padding-right: 0%;
+} */
+
+.otherLinks{
+    margin-top: 30%;
+    width: 50px;
+    height: fit-content;
+    padding: 10px;
+    margin-left: 0;
+    background-color: #e6e4e5;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 10;
+    right: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
