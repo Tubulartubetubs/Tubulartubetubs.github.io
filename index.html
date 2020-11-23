@@ -110,12 +110,12 @@
                 </div>
             </div>
         </div>
-        <div class="otherLinks">
-            <a href="https://github.com/josol7"><img alt="Github" src="Logos/Github.png" class="pic github"></img></a>
+        <div id="otherLinks">
+            <!-- <a href="https://github.com/josol7"><img alt="Github" src="Logos/Github.png" class="pic github"></img></a>
             <a href="https://www.fiverr.com/cabbageboi?up_rollout=true"><img alt="Fiverr" src="Logos/Fiverr.png" class="pic fiverr"></img></a>
             <a href="https://afraid-combination.artstation.com/"><img alt="Artstation" src="Logos/Artstation.png" class="pic artstation"></img></a>
             <a href="https://twitter.com/GerryJosol"><img alt="Twitter" src="Logos/Twitter.png" class="pic twitter"></img></a>
-            <a href="https://www.instagram.com/its_gerrino/?hl=en"><img alt="Instagram" src="Logos/Instagram.png" class="pic instagram"></img></a>
+            <a href="https://www.instagram.com/its_gerrino/?hl=en"><img alt="Instagram" src="Logos/Instagram.png" class="pic instagram"></img></a> -->
         </div>
 
         <!-- The core Firebase JS SDK is always required and must be listed first -->
@@ -209,16 +209,10 @@
             }
 
             function render_works(images){
-                //container
-                var worksImageDiv
-
-                //content
-                var worksImageContent;
-
                 for(let i=0; i<images.length; i++){
-                    worksImageDiv = document.createElement("div");
+                    var worksImageDiv = document.createElement("div");
                     worksImageDiv.className= "works container image";
-                    worksImageContent = document.createElement("img");
+                    var worksImageContent = document.createElement("img");
                     worksImageContent.setAttribute("src", images[i]);
                     worksImageDiv.appendChild(worksImageContent);
                     document.getElementById("Works").appendChild(worksImageDiv);
@@ -288,6 +282,19 @@
                 experienceContainerDiv.appendChild(experienceUnorderedList);
 
                 document.getElementById("experiences").appendChild(experienceContainerDiv);
+            }
+
+            function render_links(link, image){
+                var linkContent = document.createElement("a");
+                var imageContent = document.createElement("img");
+
+                linkContent.setAttribute("href", link);
+                imageContent.setAttribute("src", image);
+                imageContent.className = "pic";
+
+                linkContent.appendChild(imageContent);
+
+                document.getElementById("otherLinks").appendChild(linkContent);
             }
         </script>
 
@@ -373,6 +380,15 @@
                 render_experience(doc.data().image, doc.data().job, doc.data().title, doc.data().year_start, doc.data().year_end, doc.data().list);
             });
         });
+
+        db.collection("Logos").get().then((querySnapshot) =>{
+            querySnapshot.forEach((doc) =>{
+                console.log(doc.data())
+                console.log(`  ${doc.data().image}`);
+                console.log(`  ${doc.data().link}`);
+                render_links(doc.data().link, doc.data().image)
+            })
+        })
         </script>
     </body>
 </html>
