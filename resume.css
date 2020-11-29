@@ -7,6 +7,7 @@ body{
 }
 
 .topnav{
+    width: 100%;
     background-color: #F0EDEE;
     overflow: hidden;
 }
@@ -99,10 +100,10 @@ body{
     width: 99%;
     height: fit-content;
     margin-left: 1%;
-    display: flex;
+    display: flexbox;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .education.container{
@@ -158,10 +159,10 @@ body{
     width: 99%;
     height: fit-content;
     margin-left: 1%;
-    display: flex;
+    display: flexbox;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .organizations.container{
@@ -364,7 +365,7 @@ body{
 }
 
 #otherLinks{
-    margin-top: 30%;
+    margin-top: 10%;
     width: fit-content;
     height: fit-content;
     padding: 10px;
@@ -382,6 +383,7 @@ body{
 
 a img{
     padding: 1px;
+    border-radius: 50px;
     width: 50px;
     height: 50px;
     vertical-align: middle;

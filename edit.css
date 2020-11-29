@@ -1,0 +1,69 @@
+body{
+    background-color: #49616E;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: auto;
+    margin-top: 10%;
+    padding: 10px;
+    background-color: #F0EDEE;
+    width: 20%;
+    border-radius: 10px;
+}
+
+.user.image{
+    background-size: 75px 75px;
+    background-image: url('Logos/User.png');
+    background-position: 0px 0px;
+    height: 75px;
+    width: 75px;
+    border-radius: 75px;
+    margin: auto;
+}
+
+.forms{
+    margin: auto;
+    margin-top: 1%;
+    background-color: #F0EDEE;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.input{
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: 12px;
+    opacity: 0.5;
+}
+
+.submitButton{
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 5px;
+    opacity: 0.5;
+    padding: 10px;
+}
+
+.input:hover,
+.input:focus,
+.submitButton:hover{
+    opacity: 1;
+}
+
+.notError{
+    visibility: hidden;
+}
+
+.error{
+    margin: auto;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 10px;
+    background-color: #fa5e5e;
+    border: 1px solid #fa4141;
+}
