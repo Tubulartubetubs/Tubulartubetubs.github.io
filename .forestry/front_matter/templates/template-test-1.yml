@@ -11,5 +11,14 @@ fields:
     schema:
       format: markdown
   label: HeaderField
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: description
 pages:
 - Tubulartubetubs/Tubulartubetubs.github.io/Test Content.md
