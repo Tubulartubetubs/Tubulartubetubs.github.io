@@ -1,4 +1,13 @@
 ---
 label: Template Test 1
 hide_body: false
-fields: []
+fields:
+- name: headerfield
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: HeaderField
