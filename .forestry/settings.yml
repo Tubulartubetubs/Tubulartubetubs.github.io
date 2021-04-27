@@ -5,6 +5,10 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
+  path: styles.css
+  label: Styles
+  match: "**/*"
+- type: document
   path: index.html
   label: index
 - type: directory
