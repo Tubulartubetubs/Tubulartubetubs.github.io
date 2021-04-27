@@ -20,5 +20,3 @@ fields:
     schema:
       format: markdown
   label: description
-pages:
-- Test Content 1..html
