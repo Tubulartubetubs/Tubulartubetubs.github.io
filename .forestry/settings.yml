@@ -4,17 +4,12 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: styles.css
-  label: Styles
-- type: document
-  path: index.html
-  label: index
 - type: directory
-  path: Tubulartubetubs/Tubulartubetubs.github.io
+  path: ''
   label: Content
   create: all
   match: "**/*"
+  new_doc_ext: ".html"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
