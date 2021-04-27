@@ -1,4 +1,14 @@
 ---
 label: Template test 2
 hide_body: false
-fields: []
+fields:
+- name: number_field_test
+  type: number
+  label: Number field test
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
