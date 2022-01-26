@@ -97,7 +97,7 @@ body{
 }
 
 #Education{
-    width: 99%;
+    width: 90%;
     height: fit-content;
     margin-left: 1%;
     display: flexbox;
@@ -156,7 +156,7 @@ body{
 }
 
 #Organizations{
-    width: 99%;
+    width: 90%;
     height: fit-content;
     margin-left: 1%;
     display: flexbox;
